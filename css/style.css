@@ -1,0 +1,148 @@
+/*=========================================================================*/
+/*============================== Contain =======================================*/
+/*=========================================================================*/
+@import url(grid.css);
+/* mixins */
+/* /// mixins */
+/* variables */
+/* /// variables */
+/* Fonts */
+@import url(responsive.css);
+@font-face {
+  font-family: 'Baskerville';
+  src: url("../fonts/baskerville/BaskervilleBT-Italic.eot");
+  src: url("../fonts/baskerville/BaskervilleBT-Italic.eot?#iefix") format("embedded-opentype"), url("../fonts/baskerville/BaskervilleBT-Italic.woff2") format("woff2"), url("../fonts/baskerville/BaskervilleBT-Italic.woff") format("woff"), url("../fonts/baskerville/BaskervilleBT-Italic.ttf") format("truetype"), url("../fonts/baskerville/BaskervilleBT-Italic.svg#BaskervilleBT-Italic") format("svg");
+  font-weight: normal;
+  font-style: italic; }
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/myriad/MyriadPro-Regular.eot");
+  src: url("../fonts/myriad/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/myriad/MyriadPro-Regular.woff2") format("woff2"), url("../fonts/myriad/MyriadPro-Regular.woff") format("woff"), url("../fonts/myriad/MyriadPro-Regular.ttf") format("truetype"), url("../fonts/myriad/MyriadPro-Regular.svg#MyriadPro-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu/Ubuntu.eot");
+  src: url("../fonts/ubuntu/Ubuntu.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu/Ubuntu.woff2") format("woff2"), url("../fonts/ubuntu/Ubuntu.woff") format("woff"), url("../fonts/ubuntu/Ubuntu.ttf") format("truetype"), url("../fonts/ubuntu/Ubuntu.svg#Ubuntu") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* Fonts */
+/* All */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Myriad Pro';
+  font-weight: normal; }
+
+.section_link {
+  font-family: 'Baskerville';
+  display: block;
+  text-decoration: none;
+  text-align: center; }
+
+.section_link.red {
+  color: #fff;
+  font-size: 24px;
+  background: #ff3f43;
+  height: 70px;
+  width: 190px;
+  line-height: 70px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out; }
+
+.section_link.red:hover {
+  -webkit-opacity: 0.8;
+  opacity: 0.8; }
+
+h1 {
+  margin: 0; }
+
+.empty {
+  height: 390px; }
+
+/* /// All */
+/* Header */
+.header {
+  height: 690px;
+  background: url("../images/header_bg.jpg") no-repeat center center;
+  background-size: cover;
+  padding-top: 180px;
+  box-sizing: border-box; }
+
+.header_inner {
+  max-width: 465px;
+  float: right;
+  margin-right: 40px; }
+
+.header_inner_author {
+  font-family: 'Ubuntu';
+  color: #333333;
+  font-size: 24px;
+  margin: 40px 0 50px;
+  display: inline-block; }
+
+.header_inner_title {
+  font-size: 60px;
+  text-transform: uppercase;
+  color: #333333; }
+
+/* /// Header */
+/* Section_1 */
+#section_1 {
+  height: 550px; }
+
+/* /// Section_1 */
+/* Section_2 */
+#section_2 {
+  height: 545px;
+  background: #e7f3f8; }
+
+/* /// Section_2 */
+/* Section_3 */
+#section_3 {
+  height: 865px; }
+
+/* /// Section_3 */
+/* Section_4 */
+#section_4, #section_8 {
+  height: 510px;
+  background: #fff9f4; }
+
+/* /// Section_4 */
+/* Section_5 */
+#section_5 {
+  height: 825px; }
+
+/* /// Section_5 */
+/* Section_6 */
+#section_6 {
+  height: 1110px;
+  background: #02bde2; }
+
+/* /// Section_6 */
+/* Section_7 */
+#section_7 {
+  height: 1010px; }
+
+/* /// Section_7 */
+/* Section_8 */
+/* /// Section_8 */
+/* Section_9 */
+#section_9 {
+  background: #e7f3f8; }
+
+/* /// Section_9 */
+/* footer */
+.footer {
+  margin-top: -390px;
+  height: 390px;
+  background: #02bde2; }
+
+.foot_bottom {
+  background: #00a9cb;
+  height: 75px; }
+
+/* /// footer */
+
+/*# sourceMappingURL=style.css.map */
