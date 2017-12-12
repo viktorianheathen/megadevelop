@@ -7,6 +7,7 @@
         <title>Managing for happiness</title>
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -24,26 +25,63 @@
                 </div>
             </header>
             <section id="section_1">
-                <div class="left_column">
-                    <img src="images/media/man.jpg" alt="man" />
+                <div class="container">
+                    <div class="row">
+                        <div class="left_column">
+                            <img src="images/media/man.jpg" alt="man" />
+                        </div>
+                        <div class="right_column">
+                            <div class="info_box">
+                                <h2 class="info_title">Jurgen Appelo</h2>
+                                <p class="info_description">
+                                    is pioneering management to help creative organizations survive and thrive in the twenty-first century. 
+                                    He is the inventor of Management 3.0 workshops and CEO of the global business network Happy Melly. 
+                                    Inc.com has called him a Top 50 Leadership Expert, a Top 50 Leadership Innovator, and a Top 100 Great Leadership Speaker. 
+                                </p>
+                                <a href="#" class="section_link rowed col_red">Read more about Jurgen Appelo <i class="ion-ios-arrow-thin-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="right_column"></div>
             </section>
             <section id="section_2">
-                <div class="left_column"></div>
-                <div class="right_column"></div>
+                <div class="container">
+                    <div class="left_column">
+                        <div class="info_box">
+                            <h2 class="info_title">Jurgen Appelo</h2>
+                            <p class="info_description">
+                                is pioneering management to help creative organizations survive and thrive in the twenty-first century. 
+                                He is the inventor of Management 3.0 workshops and CEO of the global business network Happy Melly. 
+                                Inc.com has called him a Top 50 Leadership Expert, a Top 50 Leadership Innovator, and a Top 100 Great Leadership Speaker. 
+                            </p>
+                            <a href="#" class="section_link rowed col_blue">Read more about Jurgen Appelo <i class="ion-ios-arrow-thin-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="right_column">
+                        <img src="images/media/book.jpg" alt="man" />
+                    </div>
+                </div>
             </section>
             <section id="section_3">
                 <div class="container">
                     <div class="row">
-                        <h1></h1>
+                        <h2 class="info_title">Highlights</h2>
+
                         <div class="slider_box">
-                            <div class="slide">
-                                <img src="" alt="" />
+                            <button class="fake_prev">
+                                <i class="ion-ios-arrow-thin-left"></i>
+                            </button>
+                            <div class="slider_box_inner">
+                                <div class="slide">
+                                    <img src="images/media/big_slider/1.jpg" alt="slide" />
+                                </div>
+                                <div class="slide">
+                                    <img src="images/media/big_slider/1.jpg" alt="slide" />
+                                </div>
                             </div>
-                            <div class="slide">
-                                <img src="" alt="" />
-                            </div>
+                            <button class="fake_next">
+                                <i class="ion-ios-arrow-thin-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -52,12 +90,30 @@
                 <div class="container">
                     <div class="row">
                         <div class="slider_box">
-                            <div class="slide">
-                                <img src="" alt="" />
+                            <button class="fake_prev">
+                                <i class="ion-ios-arrow-thin-left"></i>
+                            </button>
+                            <div class="slider_box_inner">
+                                <div class="slide">
+                                    <p>
+                                        In our always-on, real-time world, the nature of work has changed, potentially for the better. 
+                                        While people can be more autonomous and more productive, they can also self-destruct easier. 
+                                        Jurgen  tackles these important changes in his fun and interesting book.
+                                    </p>
+                                    <img src="images/media/comment_slider/ava.jpg" alt="avatar" />
+                                </div>
+                                <div class="slide">
+                                    <p>
+                                        In our always-on, real-time world, the nature of work has changed, potentially for the better. 
+                                        While people can be more autonomous and more productive, they can also self-destruct easier. 
+                                        Jurgen  tackles these important changes in his fun and interesting book.
+                                    </p>
+                                    <img src="images/media/comment_slider/ava.jpg" alt="avatar" />
+                                </div>
                             </div>
-                            <div class="slide">
-                                <img src="" alt="" />
-                            </div>
+                            <button class="fake_next">
+                                <i class="ion-ios-arrow-thin-right"></i>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -161,6 +217,7 @@
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="js/slick.min.js"></script>
         <script src="js/jquery.nicescroll.min.js"></script>
         <script src="js/main.js"></script>
     </body>
