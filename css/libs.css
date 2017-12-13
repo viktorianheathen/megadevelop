@@ -25,8 +25,8 @@
 .slick-next{background-position:-13px 2px;right:0px;}
 .slick-prev:hover{background-position:5px -31px;}
 .slick-next:hover{background-position:-13px -31px;}
-.slick-dots{position:absolute;bottom:25px;display:block;width:100%;font-size:0;padding:0;list-style:none;text-align:center;}
+.slick-dots{position:absolute;bottom: -40px;display:block;width:100%;font-size:0;padding:0;list-style:none;text-align:center;}
 .slick-dots li{position:relative;display:inline-block;margin:0 2px;padding:0;cursor:pointer;}
-.slick-dots li button{display:block;width:12px;height:12px;outline:none;padding:0;border:0;border-radius:100%;background-color:#51b1ec;cursor:pointer;color:transparent;}
+.slick-dots li button{display:block;width:8px;height:8px;outline:none;padding:0;border:1px solid #a5a4a4;border-radius:100%;cursor:pointer;color:transparent; background: transparent;}
 .slick-dots li button:hover,
-.slick-dots li.slick-active button{background-color:#ff6a83;}
+.slick-dots li.slick-active button{background-color:#ff3f43;border-color: #ff3f43;}

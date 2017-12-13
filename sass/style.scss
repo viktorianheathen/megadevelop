@@ -70,6 +70,7 @@ $light_pink_section: #fff9f4;
 $blue_section: #02bde2;
 $black_color: #333333;
 $red_color: #ff3f43;
+$green_color: #1ab26b;
 /* /// variables */
 
 /* Fonts */
@@ -117,6 +118,10 @@ html, body
     font-family: 'Myriad Pro';
     font-weight: normal;
 }
+iframe
+{
+    border: none !important;
+}
 #main
 {
     
@@ -159,6 +164,10 @@ html, body
 .section_link.rowed.col_blue
 {
     color: $blue_section;
+}
+.section_link.rowed.col_green
+{
+    color: $green_color;
 }
 
 
@@ -371,6 +380,7 @@ h1
     i{
         position: relative;
         left: 20px;
+        top: -1px;
         @include transition(0.3s, ease-in-out);
     }
     
@@ -391,6 +401,7 @@ h1
         left: auto !important;
         position: relative;
         right: 20px;
+        top: -1px;
         @include transition(0.3s, ease-in-out);
     }
 
@@ -416,6 +427,28 @@ h1
         {
            @include border-radius(50%);
         }
+        .comment_name
+        {
+            color: $red_color;
+            font-family: 'Ubuntu';
+            font-size: 16px;
+            width: 100%;
+            text-align: center;
+            display: block;
+            margin-top: 25px;
+        }
+        .comment_anno
+        {
+            text-align: center;
+            font-family: 'Ubuntu';
+            font-size: 14px;
+            color: #666666;
+            display: block;
+            text-align: center;
+            max-width: 255px;
+            margin: 0 auto;
+            margin-top: 20px;
+        }
     }
 }
 /* /// Section_4 */
@@ -424,6 +457,56 @@ h1
 #section_5
 {
     height: 825px;
+    padding-top: 95px;
+    box-sizing: border-box;
+
+    .section_link
+    {
+        @include justify(center, center);
+        margin-top: 70px;
+    }
+}
+.video_box
+{
+    position: relative;
+    max-width: 980px;
+    margin: 0 auto;
+
+    .video_overlay
+    {
+        position: absolute;
+        background: rgba(40, 61, 82, 0.6);
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+
+        &.played
+        {
+            background: transparent;
+        }
+    }
+    .playPause
+    {
+        width: 95px;
+        height: 95px;
+        border: 1px solid #fff;
+        background: transparent;
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        @include transform(translate, (-50%, -50%));
+        color: $red_color;
+        font-size: 60px;
+
+        i{
+            position: relative;
+            left: 3px;
+        }
+
+    }
 }
 /* /// Section_5 */
 
@@ -439,6 +522,17 @@ h1
 #section_7
 {
     height: 1010px;
+
+    p{
+        margin: 0;
+        margin-left: 90px;
+        margin-top: 55px;
+        color: #666666;
+        font-size: 16px;
+        font-family: 'Ubuntu';
+        max-width: 475px;
+        line-height: 25px;
+    }
 }
 /* /// Section_7 */
 

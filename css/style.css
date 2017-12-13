@@ -35,6 +35,9 @@ html, body {
   font-family: 'Myriad Pro';
   font-weight: normal; }
 
+iframe {
+  border: none !important; }
+
 .section_link {
   font-family: 'Baskerville';
   display: block;
@@ -70,6 +73,9 @@ html, body {
 
 .section_link.rowed.col_blue {
   color: #02bde2; }
+
+.section_link.rowed.col_green {
+  color: #1ab26b; }
 
 .section_link.red {
   color: #fff;
@@ -249,6 +255,7 @@ h1 {
   .fake_prev i, .fake_next i {
     position: relative;
     left: 20px;
+    top: -1px;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
@@ -262,6 +269,7 @@ h1 {
     left: auto !important;
     position: relative;
     right: 20px;
+    top: -1px;
     -webkit-transition: 0.3s ease-in-out;
     -o-transition: 0.3s ease-in-out;
     transition: 0.3s ease-in-out; }
@@ -277,11 +285,69 @@ h1 {
   #section_4 .slide img, #section_8 .slide img {
     -webkit-border-radius: 50%;
     border-radius: 50%; }
+  #section_4 .slide .comment_name, #section_8 .slide .comment_name {
+    color: #ff3f43;
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    display: block;
+    margin-top: 25px; }
+  #section_4 .slide .comment_anno, #section_8 .slide .comment_anno {
+    text-align: center;
+    font-family: 'Ubuntu';
+    font-size: 14px;
+    color: #666666;
+    display: block;
+    text-align: center;
+    max-width: 255px;
+    margin: 0 auto;
+    margin-top: 20px; }
 
 /* /// Section_4 */
 /* Section_5 */
 #section_5 {
-  height: 825px; }
+  height: 825px;
+  padding-top: 95px;
+  box-sizing: border-box; }
+  #section_5 .section_link {
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin-top: 70px; }
+
+.video_box {
+  position: relative;
+  max-width: 980px;
+  margin: 0 auto; }
+  .video_box .video_overlay {
+    position: absolute;
+    background: rgba(40, 61, 82, 0.6);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9; }
+    .video_box .video_overlay.played {
+      background: transparent; }
+  .video_box .playPause {
+    width: 95px;
+    height: 95px;
+    border: 1px solid #fff;
+    background: transparent;
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #ff3f43;
+    font-size: 60px; }
+    .video_box .playPause i {
+      position: relative;
+      left: 3px; }
 
 /* /// Section_5 */
 /* Section_6 */
@@ -293,6 +359,15 @@ h1 {
 /* Section_7 */
 #section_7 {
   height: 1010px; }
+  #section_7 p {
+    margin: 0;
+    margin-left: 90px;
+    margin-top: 55px;
+    color: #666666;
+    font-size: 16px;
+    font-family: 'Ubuntu';
+    max-width: 475px;
+    line-height: 25px; }
 
 /* /// Section_7 */
 /* Section_8 */

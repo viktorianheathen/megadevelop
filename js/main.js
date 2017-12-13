@@ -18,5 +18,23 @@ $(document).ready(function(){
         $(this).parent().find('.slider_box_inner .slick-prev').trigger('click');
     });
     /* /// Slick */
+    function playPause(vid)
+    {
+        var vid = document.getElementById(vid);
+        if(vid.paused)
+            {
+                vid.play();
+                $('.playPause').fadeOut();
+                $('.video_overlay').addClass('played');
+            }
+        else
+            {
+                vid.pause();
+                $('.playPause').fadeIn();
+                $('.video_overlay').removeClass('played');
+            }
+    }
+    $('.playPause').on('click', function(){playPause('landing_video');});
+    $('.video_overlay').on('click', function(){playPause('landing_video');});
 
 });
