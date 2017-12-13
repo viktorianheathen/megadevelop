@@ -42,6 +42,13 @@
         -ms-flex-align: $old;
             align-items: $new;
 }
+@mixin flex-direction($old, $new)
+{
+    -webkit-box-orient: $old;
+    -webkit-flex-direction: $new;
+        -ms-flex-direction: $new;
+            flex-direction: $new;
+}
 @mixin transform($type, $count)
 {
     -webkit-transform: $type + '(' + $count + ')';
@@ -121,6 +128,11 @@ html, body
 iframe
 {
     border: none !important;
+}
+div,
+button
+{
+    outline: none !important;
 }
 #main
 {
@@ -331,6 +343,11 @@ h1
 {
     height: 865px;
     position: relative;
+
+    .slick-dots
+    {
+        display: none !important;
+    }
 }
 .slider_box
 {
@@ -491,7 +508,7 @@ h1
     {
         width: 95px;
         height: 95px;
-        border: 1px solid #fff;
+        border: 1px solid #e7e9ea;
         background: transparent;
         z-index: 10;
         position: absolute;
@@ -500,10 +517,17 @@ h1
         @include transform(translate, (-50%, -50%));
         color: $red_color;
         font-size: 60px;
+        cursor: pointer;
+        @include transition(0.3s, ease-in-out);
 
         i{
             position: relative;
             left: 3px;
+        }
+
+        &:hover
+        {
+            background: #e7e9ea;
         }
 
     }
@@ -522,6 +546,7 @@ h1
 #section_7
 {
     height: 1010px;
+    padding-top: 75px;
 
     p{
         margin: 0;
@@ -532,6 +557,11 @@ h1
         font-family: 'Ubuntu';
         max-width: 475px;
         line-height: 25px;
+    }
+    .section_link.rowed.col_green
+    {
+        margin-left: 90px;
+        margin-top: 30px;
     }
 }
 /* /// Section_7 */
@@ -556,11 +586,18 @@ h1
     margin-top: -390px;
     height: 390px;
     background: $blue_section;
+    @include flex();
+    @include align-items(end, flex-end);
+    @include justify(end, flex-end);
+    @include flex-direction(vertical, column);
 }
 .foot_bottom
 {
     background: #00a9cb;
     height: 75px;
+    width: 100%;
+    line-height: 75px;
+    color: #fff;
 }
 /* /// footer */
 

@@ -38,6 +38,10 @@ html, body {
 iframe {
   border: none !important; }
 
+div,
+button {
+  outline: none !important; }
+
 .section_link {
   font-family: 'Baskerville';
   display: block;
@@ -213,6 +217,8 @@ h1 {
 #section_3 {
   height: 865px;
   position: relative; }
+  #section_3 .slick-dots {
+    display: none !important; }
 
 .slider_box {
   width: 100%;
@@ -334,7 +340,7 @@ h1 {
   .video_box .playPause {
     width: 95px;
     height: 95px;
-    border: 1px solid #fff;
+    border: 1px solid #e7e9ea;
     background: transparent;
     z-index: 10;
     position: absolute;
@@ -344,10 +350,16 @@ h1 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     color: #ff3f43;
-    font-size: 60px; }
+    font-size: 60px;
+    cursor: pointer;
+    -webkit-transition: 0.3s ease-in-out;
+    -o-transition: 0.3s ease-in-out;
+    transition: 0.3s ease-in-out; }
     .video_box .playPause i {
       position: relative;
       left: 3px; }
+    .video_box .playPause:hover {
+      background: #e7e9ea; }
 
 /* /// Section_5 */
 /* Section_6 */
@@ -358,7 +370,8 @@ h1 {
 /* /// Section_6 */
 /* Section_7 */
 #section_7 {
-  height: 1010px; }
+  height: 1010px;
+  padding-top: 75px; }
   #section_7 p {
     margin: 0;
     margin-left: 90px;
@@ -368,6 +381,9 @@ h1 {
     font-family: 'Ubuntu';
     max-width: 475px;
     line-height: 25px; }
+  #section_7 .section_link.rowed.col_green {
+    margin-left: 90px;
+    margin-top: 30px; }
 
 /* /// Section_7 */
 /* Section_8 */
@@ -381,11 +397,30 @@ h1 {
 .footer {
   margin-top: -390px;
   height: 390px;
-  background: #02bde2; }
+  background: #02bde2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .foot_bottom {
   background: #00a9cb;
-  height: 75px; }
+  height: 75px;
+  width: 100%;
+  line-height: 75px;
+  color: #fff; }
 
 /* /// footer */
 

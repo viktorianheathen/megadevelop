@@ -24,13 +24,13 @@ $(document).ready(function(){
         if(vid.paused)
             {
                 vid.play();
-                $('.playPause').fadeOut();
+                $('.playPause').hide();
                 $('.video_overlay').addClass('played');
             }
         else
             {
                 vid.pause();
-                $('.playPause').fadeIn();
+                $('.playPause').show();
                 $('.video_overlay').removeClass('played');
             }
     }
