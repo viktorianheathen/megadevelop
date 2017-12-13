@@ -42,6 +42,9 @@ div,
 button {
   outline: none !important; }
 
+#main {
+  overflow: hidden; }
+
 .section_link {
   font-family: 'Baskerville';
   display: block;
