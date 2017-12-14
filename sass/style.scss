@@ -42,6 +42,12 @@
         -ms-flex-align: $old;
             align-items: $new;
 }
+@mixin flex-wrap()
+{
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
 @mixin flex-direction($old, $new)
 {
     -webkit-box-orient: $old;
@@ -133,6 +139,16 @@ div,
 button
 {
     outline: none !important;
+}
+section
+{
+    box-sizing: border-box;
+}
+ul,ol
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 #main
 {
@@ -563,12 +579,27 @@ h1
         margin-left: 90px;
         margin-top: 30px;
     }
+    .info_title
+    {
+        margin-top: 0;
+        margin-bottom: 70px;
+        color: #999999;
+        font-family: 'Ubuntu';
+        font-weight: normal;
+        margin-left: 90px;
+
+        &::before
+        {
+            background: $green_color;
+        }
+    }
 }
 /* /// Section_7 */
 
 /* Section_8 */
 #section_8
 {
+    @extend #section_1;
     @extend #section_4;
 }
 /* /// Section_8 */
@@ -576,7 +607,9 @@ h1
 /* Section_9 */
 #section_9
 {
+    @extend #section_2;
     background: $green_section;
+    height: 512px;
 }
 /* /// Section_9 */
 
@@ -584,12 +617,49 @@ h1
 .footer
 {
     margin-top: -390px;
+    padding-top: 75px;
     height: 390px;
     background: $blue_section;
+    color: #fff;
     @include flex();
     @include align-items(end, flex-end);
-    @include justify(end, flex-end);
+    @include justify(justify, space-between);
     @include flex-direction(vertical, column);
+
+    .info_title
+    {
+        margin-top: 0px;
+        margin-bottom: 75px;
+        font-weight: normal;
+        font-family: 'Ubuntu';
+
+        &::before
+        {
+            background: #fff;
+        }
+    }
+}
+.foot_top
+{
+    width: 100%;
+    height: 315px;
+
+    .soc_list
+    {
+        @include flex();
+        @include flex-wrap();
+        @include justify(justify, space-between);
+        max-width: 320px;
+
+        .soc_link
+        {
+            color: #fff;
+            font-size: 40px;
+            margin-right: 40px;
+            margin-bottom: 40px;
+            display: block;
+        }
+    }
 }
 .foot_bottom
 {
