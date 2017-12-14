@@ -610,8 +610,242 @@ h1
     @extend #section_2;
     background: $green_section;
     height: 512px;
+    .left_column
+    {
+        margin-left: 45px;
+    }
 }
 /* /// Section_9 */
+
+/* Section_10 */
+#section_10
+{
+    
+}
+/* /// Section_10 */
+
+/* Section_12 */
+#section_12
+{
+    padding: 60px 0;
+    border-top: 1px solid #e9e9e9;
+    
+        .interview_inner
+        {
+            padding: 0 220px;
+            @include flex();
+            font-family: 'Ubuntu';
+    
+            .interview_title
+            {
+                font-size: 24px;
+                color: #666666;
+                font-weight: normal;
+                margin-top: 5px;
+                margin-bottom: 30px;
+
+                a{
+                    color: $black_color;
+                    text-decoration: none;
+                }
+            }
+            .left_column
+            {
+                width: 300px;
+            }
+            .right_column
+            {
+                width: calc(100% - 300px);
+                text-align: left;
+            }
+            span{
+                font-size: 16px;
+                color: #666666;
+                margin-bottom: 35px;
+                display: block;
+            }
+        }
+}
+/* /// Section_12 */
+
+/* Section_13 */
+#section_13
+{
+    @extend #section_12;
+    .interview_inner
+    {
+        .interview_title
+        {
+            color: $black_color;
+        }
+        .left_column
+        {
+            width: calc(100% - 300px);
+        }
+        .right_column
+        {
+            text-align: right;
+            width: 300px;
+        }
+    }
+}
+/* /// Section_13 */
+
+/* Section_14 */
+#section_14
+{
+    min-height: 550px;
+    box-shadow: inset 0 3px 5px #c6c6d1;
+    padding-top: 75px;
+    padding-bottom: 90px;
+    background: #ebf5f3;
+
+    .info_title
+    {
+        right: 3px;
+        margin-left: 90px;
+        margin-top: 0;
+        color: #999999;
+        font-family: 'Ubuntu';
+        font-weight: normal;
+        margin-bottom: 70px;
+
+        &::before
+        {
+            background: $green_color;
+        }
+    }
+    .management_box
+    {
+        padding: 0 95px;
+        @include flex();
+        @include align-items(start, flex-start);
+        @include justify(justify, space-between);
+        overflow: hidden;
+
+        .management-box__item
+        {
+            width: 285px;
+            font-family: 'Ubuntu';
+            font-weight: normal;
+
+            .management_image_box
+            {
+                overflow: hidden;
+                height: 230px;
+                text-align: center;
+                line-height: 230px;
+            }
+            .management_image
+            {
+                @include transform(scale, 1);
+                @include transition(1s, ease-in-out);
+                cursor: pointer;
+
+                &:hover
+                {
+                    @include transform(scale, (1.2));
+                }
+            }
+            .section_link
+            {
+                @include justify(center, center);
+            }
+        }
+    }
+}
+/* /// Section_14 */
+
+/* Section_15 */
+#section_15
+{
+    padding-bottom: 90px;
+
+    .info_title
+    {
+        right: 3px;
+        margin-top: 75px;
+        margin-left: 90px;
+        color: #999999;
+        font-family: 'Ubuntu';
+        font-weight: normal;
+        margin-bottom: 70px;
+
+        &::before
+        {
+            background: #f58220;
+        }
+    }
+    .latest_box
+    {
+        padding: 0 95px;
+        @include flex();
+        @include align-items(start, flex-start);
+        @include justify(justify, space-between);
+        overflow: hidden;
+
+        .latest-box__item
+        {
+            width: 285px;
+            font-family: 'Ubuntu';
+            font-weight: normal;
+
+            .latest_image_box
+            {
+                overflow: hidden;
+                height: 230px;
+            }
+            .latest_image
+            {
+                @include transform(scale, 1);
+                @include transition(1s, ease-in-out);
+                cursor: pointer;
+
+                &:hover
+                {
+                    @include transform(scale, (1.2));
+                }
+            }
+            .post_date
+            {
+                color: #999999;
+                font-size: 14px;
+                margin-top: 20px;
+                display: block;
+            }
+            .post_name
+            {
+                font-size: 24px;
+                line-height: 35px;
+                margin: 25px 0;
+
+                .post_link
+                {
+                    color: #666666;
+                    text-decoration: none;
+                    @include transition(0.3s, ease-in-out);
+
+                    &:hover
+                    {
+                        opacity: 0.6;
+                    }
+                }
+            }
+            .post_anno
+            {
+                color: #666666;
+                font-size: 14px;
+                line-height: 25px;
+            }
+            .section_link
+            {
+                font-size: 16px;
+                color: #f58220;
+            }
+        }
+    }
+}
+/* /// Section_15 */
 
 /* footer */
 .footer
@@ -630,6 +864,7 @@ h1
     {
         margin-top: 0px;
         margin-bottom: 75px;
+        margin-left: 90px;
         font-weight: normal;
         font-family: 'Ubuntu';
 
@@ -643,6 +878,7 @@ h1
 {
     width: 100%;
     height: 315px;
+    overflow: hidden;
 
     .soc_list
     {
@@ -650,6 +886,7 @@ h1
         @include flex-wrap();
         @include justify(justify, space-between);
         max-width: 320px;
+        margin-left: 90px;
 
         .soc_link
         {
