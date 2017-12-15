@@ -1,4 +1,127 @@
-@media (max-width: 1200px)
+@mixin align-items($old, $new)
+{
+    -webkit-box-align: $old;
+    -webkit-align-items: $new;
+        -ms-flex-align: $old;
+            align-items: $new;
+}
+
+@media (min-width: 1200px)
 {
 
+}
+@media (max-width: 1199px)
+{
+    .info_title
+    {
+        margin: 0;
+    }
+    .section_link.rowed
+    {
+        font-size: 20px;
+    }
+    .header
+    {
+        height: 545px;
+        padding-top: 90px;
+
+        .header_inner
+        {
+            margin-right: 0;
+            padding-left: 50px;
+            box-sizing: border-box;
+
+            .header_inner_title
+            {
+                font-size: 50px;
+            }
+            .header_inner_author
+            {
+                margin: 40px 0;
+            }
+        }
+    }
+
+    #section_1
+    {
+
+        @include align-items(start, flex-start);
+        height: 410px;
+
+        .right_column
+        {
+            width: 50%;
+            padding-left: 80px;
+            box-sizing: border-box;
+            padding-bottom: 49px;
+        }
+        .info_box
+        {
+            max-width: 315px;
+            height: auto;
+            padding-top: 60px;
+            box-sizing: border-box;
+        }
+
+        .info_description
+        {
+            line-height: 25px;
+        }
+
+        img{
+            height: 410px;
+            max-width: 495px;
+        }
+    }
+    #section_2
+    {
+        @extend #section_1;
+        height: 410px;
+
+        .right_column
+        {
+            width: auto;
+        }
+        .left_column
+        {
+            margin-left: 60px;
+        }
+    }
+    #section_5
+    {
+        height: auto;
+        
+        .section_link
+        {
+            margin: 20px 0 60px;
+        }
+    }
+    .slider_box
+    {
+        max-width: 795px;
+    }
+    .video_box
+    {
+        @extend .slider_box;
+
+        .landing_video
+        {
+            height: 455px;
+        }
+    }
+
+    .map_box
+    {
+        @extend .slider_box;
+
+        iframe
+        {
+            height: 455px;
+        }
+    }
+    
+}
+@media (max-width: 991px)
+{
+    
 }

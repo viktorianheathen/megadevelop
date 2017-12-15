@@ -8,7 +8,6 @@
 /* variables */
 /* /// variables */
 /* Fonts */
-@import url(responsive.css);
 @font-face {
   font-family: 'Baskerville';
   src: url("../fonts/baskerville/BaskervilleBT-Italic.eot");
@@ -140,7 +139,7 @@ h1 {
 
 /* /// Header */
 /* Section_1 */
-#section_1, #section_8 {
+#section_1, #section_8, #section_10 {
   height: 550px;
   position: relative;
   display: -webkit-box;
@@ -155,11 +154,11 @@ h1 {
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
   justify-content: flex-start; }
-  #section_1 .left_column, #section_8 .left_column {
+  #section_1 .left_column, #section_8 .left_column, #section_10 .left_column {
     position: absolute;
     left: 0;
     top: 0; }
-  #section_1 .right_column, #section_8 .right_column {
+  #section_1 .right_column, #section_8 .right_column, #section_10 .right_column {
     float: right; }
 
 .info_title {
@@ -295,14 +294,14 @@ h1 {
 
 /* /// Section_3 */
 /* Section_4 */
-#section_4, #section_8 {
+#section_4, #section_8, #section_10 {
   height: 510px;
   background: #fff9f4;
   position: relative; }
-  #section_4 .slide img, #section_8 .slide img {
+  #section_4 .slide img, #section_8 .slide img, #section_10 .slide img {
     -webkit-border-radius: 50%;
     border-radius: 50%; }
-  #section_4 .slide .comment_name, #section_8 .slide .comment_name {
+  #section_4 .slide .comment_name, #section_8 .slide .comment_name, #section_10 .slide .comment_name {
     color: #ff3f43;
     font-family: 'Ubuntu';
     font-size: 16px;
@@ -310,7 +309,7 @@ h1 {
     text-align: center;
     display: block;
     margin-top: 25px; }
-  #section_4 .slide .comment_anno, #section_8 .slide .comment_anno {
+  #section_4 .slide .comment_anno, #section_8 .slide .comment_anno, #section_10 .slide .comment_anno {
     text-align: center;
     font-family: 'Ubuntu';
     font-size: 14px;
@@ -338,6 +337,8 @@ h1 {
   position: relative;
   max-width: 980px;
   margin: 0 auto; }
+  .video_box .landing_video {
+    height: 560px; }
   .video_box .video_overlay {
     position: absolute;
     background: rgba(40, 61, 82, 0.6);
@@ -404,6 +405,10 @@ h1 {
     margin-left: 90px; }
     #section_7 .info_title::before {
       background: #1ab26b; }
+  #section_7 .map_box {
+    margin: 0 auto; }
+    #section_7 .map_box iframe {
+      height: 585px; }
 
 /* /// Section_7 */
 /* Section_8 */
@@ -417,11 +422,37 @@ h1 {
 
 /* /// Section_9 */
 /* Section_10 */
+#section_10 {
+  background: #e7f3f8; }
+
 /* /// Section_10 */
+/* Section_11 */
+#section_11 {
+  height: 423px;
+  position: relative;
+  background: #fff9f4;
+  font-family: 'Ubuntu'; }
+  #section_11 .left_pic,
+  #section_11 .right_pic {
+    position: absolute;
+    top: 0; }
+  #section_11 .left_pic {
+    left: 0; }
+  #section_11 .right_pic {
+    right: 0; }
+  #section_11 .big_title {
+    position: absolute;
+    font-size: 24px;
+    color: #333333;
+    left: 530px;
+    top: 120px;
+    z-index: 99;
+    font-weight: normal; }
+
+/* /// Section_11 */
 /* Section_12 */
 #section_12, #section_13 {
-  padding: 60px 0;
-  border-top: 1px solid #e9e9e9; }
+  padding: 60px 0; }
   #section_12 .interview_inner, #section_13 .interview_inner {
     padding: 0 220px;
     display: -webkit-box;
@@ -451,13 +482,15 @@ h1 {
 
 /* /// Section_12 */
 /* Section_13 */
-#section_13 .interview_inner .interview_title {
-  color: #333333; }
-#section_13 .interview_inner .left_column {
-  width: calc(100% - 300px); }
-#section_13 .interview_inner .right_column {
-  text-align: right;
-  width: 300px; }
+#section_13 {
+  border-top: 1px solid #e9e9e9; }
+  #section_13 .interview_inner .interview_title {
+    color: #333333; }
+  #section_13 .interview_inner .left_column {
+    width: calc(100% - 300px); }
+  #section_13 .interview_inner .right_column {
+    text-align: right;
+    width: 300px; }
 
 /* /// Section_13 */
 /* Section_14 */
