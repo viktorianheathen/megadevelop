@@ -74,6 +74,25 @@
             border-radius: $deg;
 }
 
+@mixin mediaMix
+{
+    @media (max-width: 1200px)
+    {
+        @content;
+    };
+    @media (max-width: 992px)
+    {
+        @content;
+    };
+    @media (max-width: 768px)
+    {
+        @content;
+    };
+    @media (max-width: 544px)
+    {
+        @content;
+    };
+}
 
 /* /// mixins */
 
@@ -276,6 +295,7 @@ h1
     {
         float: right;
     }
+    
 }
 .info_title
 {
@@ -600,7 +620,7 @@ h1
     .map_box
     {
         margin: 0 auto;
-        
+
         iframe
         {
             height: 585px;
@@ -960,4 +980,5 @@ h1
     color: #fff;
 }
 /* /// footer */
+
 
