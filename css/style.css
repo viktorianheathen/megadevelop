@@ -119,6 +119,8 @@ h1 {
   background-size: cover;
   padding-top: 180px;
   box-sizing: border-box; }
+  .header .mobile_img {
+    display: none; }
 
 .header_inner {
   max-width: 465px;

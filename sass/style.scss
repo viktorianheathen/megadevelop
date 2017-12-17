@@ -252,6 +252,11 @@ h1
     @include background-img('header_bg.jpg');
     padding-top: 180px;
     box-sizing: border-box;
+
+    .mobile_img
+    {
+        display: none;
+    }
 }
 .header_inner
 {
