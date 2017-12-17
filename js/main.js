@@ -1,5 +1,51 @@
 $(document).ready(function(){
-
+    var app = new Vue({
+        el: '#main',
+        data: {
+            twits: [
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                },
+                {
+                    twit_name : '3 hours ago',
+                    twit_body : '"Would we miss your work if you stopped making it?" ... Ten Questions for Work That Matters | Seth Godin',
+                    twit_link : 'https://t.co/QDwPCQ8F9r#sthash.vrtyloJJ.dpuf'
+                }
+            ]
+        }
+    });
     /* ScrollBar */
     $('html').niceScroll();
     /* /// ScrollBar */

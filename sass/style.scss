@@ -380,16 +380,6 @@ h1
 /* /// Section_2 */
 
 /* Section_3 */
-#section_3
-{
-    height: 865px;
-    position: relative;
-
-    .slick-dots
-    {
-        display: none !important;
-    }
-}
 .slider_box
 {
     width: 100%;
@@ -403,6 +393,8 @@ h1
     .slide
     {
         width: 100%;
+        padding-top: 90px;
+        position: relative;
 
         img
         {
@@ -421,6 +413,66 @@ h1
         }
     }
 }
+#section_3
+{
+    height: 865px;
+    position: relative;
+    padding-top: 40px;
+
+    .info_title
+    {
+        position: absolute;
+        margin-left: 105px;
+    }
+    .slick-dots
+    {
+        display: none !important;
+    }
+    .slider_box
+    {
+        top: 6px;
+        @include transform(translate, (-50%, 0));
+
+        .slide
+        {
+            padding-top: 120px;
+
+            img
+            {
+                padding-top: 60px;
+            }
+        } 
+    }
+    .slide_description
+    {
+        position: absolute;
+        top: 55px;
+        font-family: 'Ubuntu';
+        left: 50%;
+        @include transform(translateX, -50%);
+        text-align: center;
+        
+        span
+        {
+            font-size: 24px;
+            display: block;
+            margin-bottom: 20px;
+        }
+        p
+        {
+            font-size: 16px;
+            color: #666666;
+            text-align: left;
+            font-family: 'Ubuntu';
+        }
+
+    }
+    .fake_prev, .fake_next
+    {
+        top: 62%;
+    }
+}
+
 .fake_prev
 {
     position: absolute;
@@ -481,6 +533,8 @@ h1
 
     .slide
     {
+        padding-top: 0;
+
         img
         {
            @include border-radius(50%);
@@ -582,8 +636,79 @@ h1
 /* Section_6 */
 #section_6
 {
-    height: 1110px;
     background: $blue_section;
+    box-shadow: inset 0 3px 5px grey;
+    padding: 10px 0 70px;
+
+    .info_title
+    {
+        color: #fff;
+        margin: 50px 0 50px 105px;
+
+        &::before
+        {
+            background: #fff;
+        }
+    }
+
+    .twits_box
+    {
+        div
+        {
+            box-sizing: border-box;
+        }
+        .twit_item
+        {
+            background: #fff;
+            padding: 20px 30px;
+            margin-bottom: 30px;
+            border-radius: 2px;
+            
+            span
+            {
+                color: #999999;
+                font-size: 14px;
+            }
+            p
+            {
+                font-size: 14px;
+                color: #666666;
+            }
+            a
+            {
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                display: block;
+                font-size: 14px;
+            }
+        }
+    }
+    .section_link
+    {
+        width: 100%;
+        @include justify(center, center);
+        color: #fff;
+        font-family: 'Baskerville';
+        position: relative;
+        z-index: 10;
+        padding-top: 50px;
+
+        span
+        {
+            position: absolute;
+            left: 50%;
+            top: calc(50% + 25px);
+            @include transform(translate, (-50%, -50%));
+            z-index: -1;
+            color: rgba(255,255,255,0.3);
+            font-size: 90px;
+        }
+    }
+}
+.massonry[data-columns]::before
+{
+    content: '4 .col-xl-3';
 }
 /* /// Section_6 */
 
@@ -688,7 +813,7 @@ h1
         right: 0;
     }
 
-    .big_title
+    .section_title_set
     {
         position: absolute;
         font-size: 24px;
@@ -697,6 +822,10 @@ h1
         top: 120px;
         z-index: 99;
         font-weight: normal;
+    }
+    .section_mobile_pic
+    {
+        display: none;
     }
 }
 /* /// Section_11 */

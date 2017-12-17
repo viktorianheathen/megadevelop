@@ -226,12 +226,6 @@ h1 {
 
 /* /// Section_2 */
 /* Section_3 */
-#section_3 {
-  height: 865px;
-  position: relative; }
-  #section_3 .slick-dots {
-    display: none !important; }
-
 .slider_box {
   width: 100%;
   max-width: 980px;
@@ -243,7 +237,9 @@ h1 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%); }
   .slider_box .slide {
-    width: 100%; }
+    width: 100%;
+    padding-top: 90px;
+    position: relative; }
     .slider_box .slide img {
       margin: 0 auto;
       display: block; }
@@ -255,6 +251,45 @@ h1 {
       margin-bottom: 30px;
       font-size: 24px;
       font-family: 'Baskerville'; }
+
+#section_3 {
+  height: 865px;
+  position: relative;
+  padding-top: 40px; }
+  #section_3 .info_title {
+    position: absolute;
+    margin-left: 105px; }
+  #section_3 .slick-dots {
+    display: none !important; }
+  #section_3 .slider_box {
+    top: 6px;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0); }
+    #section_3 .slider_box .slide {
+      padding-top: 120px; }
+      #section_3 .slider_box .slide img {
+        padding-top: 60px; }
+  #section_3 .slide_description {
+    position: absolute;
+    top: 55px;
+    font-family: 'Ubuntu';
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center; }
+    #section_3 .slide_description span {
+      font-size: 24px;
+      display: block;
+      margin-bottom: 20px; }
+    #section_3 .slide_description p {
+      font-size: 16px;
+      color: #666666;
+      text-align: left;
+      font-family: 'Ubuntu'; }
+  #section_3 .fake_prev, #section_3 .fake_next, #section_3 .fake_next {
+    top: 62%; }
 
 .fake_prev, .fake_next {
   position: absolute;
@@ -300,27 +335,29 @@ h1 {
   height: 510px;
   background: #fff9f4;
   position: relative; }
-  #section_4 .slide img, #section_8 .slide img, #section_10 .slide img {
-    -webkit-border-radius: 50%;
-    border-radius: 50%; }
-  #section_4 .slide .comment_name, #section_8 .slide .comment_name, #section_10 .slide .comment_name {
-    color: #ff3f43;
-    font-family: 'Ubuntu';
-    font-size: 16px;
-    width: 100%;
-    text-align: center;
-    display: block;
-    margin-top: 25px; }
-  #section_4 .slide .comment_anno, #section_8 .slide .comment_anno, #section_10 .slide .comment_anno {
-    text-align: center;
-    font-family: 'Ubuntu';
-    font-size: 14px;
-    color: #666666;
-    display: block;
-    text-align: center;
-    max-width: 255px;
-    margin: 0 auto;
-    margin-top: 20px; }
+  #section_4 .slide, #section_8 .slide, #section_10 .slide {
+    padding-top: 0; }
+    #section_4 .slide img, #section_8 .slide img, #section_10 .slide img {
+      -webkit-border-radius: 50%;
+      border-radius: 50%; }
+    #section_4 .slide .comment_name, #section_8 .slide .comment_name, #section_10 .slide .comment_name {
+      color: #ff3f43;
+      font-family: 'Ubuntu';
+      font-size: 16px;
+      width: 100%;
+      text-align: center;
+      display: block;
+      margin-top: 25px; }
+    #section_4 .slide .comment_anno, #section_8 .slide .comment_anno, #section_10 .slide .comment_anno {
+      text-align: center;
+      font-family: 'Ubuntu';
+      font-size: 14px;
+      color: #666666;
+      display: block;
+      text-align: center;
+      max-width: 255px;
+      margin: 0 auto;
+      margin-top: 20px; }
 
 /* /// Section_4 */
 /* Section_5 */
@@ -378,8 +415,57 @@ h1 {
 /* /// Section_5 */
 /* Section_6 */
 #section_6 {
-  height: 1110px;
-  background: #02bde2; }
+  background: #02bde2;
+  box-shadow: inset 0 3px 5px grey;
+  padding: 10px 0 70px; }
+  #section_6 .info_title {
+    color: #fff;
+    margin: 50px 0 50px 105px; }
+    #section_6 .info_title::before {
+      background: #fff; }
+  #section_6 .twits_box div {
+    box-sizing: border-box; }
+  #section_6 .twits_box .twit_item {
+    background: #fff;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    border-radius: 2px; }
+    #section_6 .twits_box .twit_item span {
+      color: #999999;
+      font-size: 14px; }
+    #section_6 .twits_box .twit_item p {
+      font-size: 14px;
+      color: #666666; }
+    #section_6 .twits_box .twit_item a {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      display: block;
+      font-size: 14px; }
+  #section_6 .section_link {
+    width: 100%;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Baskerville';
+    position: relative;
+    z-index: 10;
+    padding-top: 50px; }
+    #section_6 .section_link span {
+      position: absolute;
+      left: 50%;
+      top: calc(50% + 25px);
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      z-index: -1;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 90px; }
+
+.massonry[data-columns]::before {
+  content: '4 .col-xl-3'; }
 
 /* /// Section_6 */
 /* Section_7 */
@@ -442,7 +528,7 @@ h1 {
     left: 0; }
   #section_11 .right_pic {
     right: 0; }
-  #section_11 .big_title {
+  #section_11 .section_title_set {
     position: absolute;
     font-size: 24px;
     color: #333333;
@@ -450,6 +536,8 @@ h1 {
     top: 120px;
     z-index: 99;
     font-weight: normal; }
+  #section_11 .section_mobile_pic {
+    display: none; }
 
 /* /// Section_11 */
 /* Section_12 */
